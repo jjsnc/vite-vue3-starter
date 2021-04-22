@@ -63,6 +63,33 @@ Git Hook 工具：husky + lint-staged
       配置 husky
       配置 lint-staged
 
+提交规范
+
+commit message 格式规范
+  Header
+    type    必需    用于说明 commit 的提交类型
+    scope   可选    scope 用于指定本次 commit 影响的范围
+    subject 必需    subject 是本次 commit 的简洁描述
+  Body      body 是对本次 commit 的详细描述 (可省略)              
+  Footer    如果本次提交的代码是突破性的变更或关闭缺陷，则 Footer 必需，否则可以省略
+  参考例子   feat(browser): onUrlChange event (popstate/hashchange/polling)
+  规范 commit message 的好处 
+  集成 Commitizen 实现规范提交
+    安装 Commitizen
+    初始化项目
+    使用 Commitizen   以前我们提交代码都是 git commit -m "xxx"，现在改为 git cz
+    自定义配置提交说明
+      cz-customizable 初始化项目
+      cz-customizable 初始化项目
+
+
+
+
+
+
+
+
+
 
 
 ├── publish/
@@ -83,3 +110,22 @@ Git Hook 工具：husky + lint-staged
 ├── tsconfig.json // TypeScript 配置文件
 ├── vite.config.ts // Vite 配置文件
 └── package.json
+
+
+
+
+type 用于说明 commit 的提交类型（必须是以下几种之一）
+
+
+值        描述
+feat      新增一个功能
+fix       修复一个 Bug
+docs      文档变更
+style     代码格式（不影响功能，例如空格、分号等格式修正）
+refactor  代码重构
+perf      改善性能
+test      测试
+build     变更项目构建或外部依赖（例如 scopes: webpack、gulp、npm 等）
+ci        更改持续集成软件的配置文件和 package 中的 scripts 命令，例如 scopes: Travis, Circle 等
+chore     变更构建流程或辅助工具
+revert    代码回退
