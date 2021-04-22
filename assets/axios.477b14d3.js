@@ -1,0 +1,1 @@
+import{d as s,r as a,o as r,c as e,w as o}from"./vendor.4f835534.js";var t=s({name:"axios",props:{msg:{type:String,required:!0}},setup:()=>({count:a(0)})});const d=o()(((s,a,o,t,d,n)=>(r(),e("div",null,"axios"))));t.render=d,t.__scopeId="data-v-24fc9766";export default t;
