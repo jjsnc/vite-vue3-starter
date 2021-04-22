@@ -16,5 +16,11 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: { 'import/no-extraneous-dependencies': ['error', { devDependencies: true }] }
+  rules: {
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'import/no-absolute-path': 'off',
+    'vue/no-multiple-template-root': 'off'
+  }
 }
