@@ -1,7 +1,10 @@
-<template>axios</template>
+<template>
+  <div>axios</div>
+</template>
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+
 export default defineComponent({
   name: 'axios',
   props: {
